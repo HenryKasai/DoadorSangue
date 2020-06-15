@@ -15,7 +15,7 @@ namespace DoadorSangue
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Valor inválido.");
-                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.ResetColor();
                 Environment.Exit(-1);
             }
             else 
@@ -30,7 +30,7 @@ namespace DoadorSangue
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Você pode ser um doador de sangue.");
                 }
-                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.ResetColor();
             }
             Console.ReadKey();
         }
